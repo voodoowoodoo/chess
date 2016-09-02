@@ -18,15 +18,29 @@ class Pawn < Piece
 	def initialize
 		@moved? = false
 	end
+
+
 end
 
 class Queen < Piece
 end
 
 class King < Piece
+
+	attr_reader :moved?
+
+	def initialize
+		@moved? = false
+	end
 end
 
 class Rook < Piece
+
+	attr_reader :moved?
+
+	def initialize
+		@moved? = false
+	end
 end
 
 class Bishop < Piece
